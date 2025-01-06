@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+header {
+  background-image: url("Images/image\ 2.png");
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+section {
+  padding: 30px;
+}
+
+.header-section {
+  background-color: #3d3d6baa;
+}
+
+.main-menu {
+  border-radius: 20px;
+  background-color: white;
+  color: #3D3D6B;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu a img {
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #3D3D6B;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: "Unbounded", serif;
+}
+
+.main-menu a:hover {
+  color: #EB434A;
+}
+
+header .social-media a .fa-brands {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 6px;
+  background-color: #EB434A;
+  color: white;
+}
+
+section h5 {
+  text-transform: uppercase;
+  font-family: "Archivo", serif;
+  font-weight: bold;
+}
+
+section h2 {
+  font-family: "Unbounded", serif;
+  font-size: 35px;
+}
+
+section p {
+  font-family: "Unbounded", serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.purple-section {
+  background-color: #3D3D6B;
+  color: white;
+}
+
+.white-section {
+  text-align: center;
+  background-color: white;
+  color: #3D3D6B;
+}
+
+.white-section h5 {
+  background: -webkit-linear-gradient(#199CB6, #EB434A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero {
+  color: white;
+  padding: 100px 20px;
+  width: 50%;
+}
+
+.hero h2 span {
+  -webkit-text-fill-color: #ffffff00;
+  -webkit-text-stroke: 1px #EB434A;
+}
+
+.shopify-img {
+  height: 400px;
+  min-width: 250px;
+}
+
+.stat .number {
+  font-weight: bold;
+  color: #EB434A;
+  font-size: 40px;
+}
+
+.stat .label {
+  margin-top: -50px;
+}
+
+.web-crafts-img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.hero .btn,
+.projects-section .btn {
+  background-color: #EB434A;
+  color: white;
+}
+
+.portfolio .btn,
+.purple-card .btn {
+  background-color: #3D3D6B;
+  color: white;
+  border: white solid 0.5px;
+}
+
+.white-card .btn {
+  background-color: white;
+  color: #3D3D6B;
+  border: #3D3D6B solid 0.5px;
+}
+
+swiper-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+swiper-slide img {
+  width: 100%;
+}
+
+.pricing-cards .card {
+  border-radius: 10px;
+  height: 380px;
+  margin: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  min-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card h2 span {
+  font-size: 16px;
+  color: #CACACA;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.white-card {
+  background-color: white;
+  color: #3D3D6B;
+}
+
+.purple-card {
+  background-color: #3D3D6B;
+  color: white;
+}
+
+.card .btn {
+  position: absolute;
+  bottom: 12px;
+}
+
+footer {
+  background-color: #25254D;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-item {
+  font-size: 14px;
+  margin: 5px;
+  background: white;
+  color: #2c2c54;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: left;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.contact-icon img {
+  margin-left: 10px;
+  width: 25px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
