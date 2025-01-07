@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +18,7 @@ header {
   align-items: center;
 }
 
-.list{
+.list {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -62,6 +61,8 @@ header {
   font-weight: 100;
   font-size: var(--main-font-size);
   line-height: 1.5;
+  margin: 30px 0px;
+  max-width: calc(var(--container-width)*0.7);
 }
 
 .section-short.sp {
@@ -75,9 +76,10 @@ header {
   -webkit-text-stroke: 1px var(--tertiary-color);
 }
 
-.blue-text{
+.blue-text {
   color: #199CB6;
 }
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(61, 61, 107, 0.9)), url("Images/image\ 2.png");
   height: 60vh;
@@ -101,20 +103,19 @@ section {
   width: 550px;
 }
 
- #popup-content {
+#popup-content {
   width: fit-content;
   margin: auto;
 }
 
-.stats-section{
+.stats-section {
   padding: 10px 50px;
 }
+
 .stat {
-  flex: 1 1 auto;
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
+
 .stat .number {
   font-weight: bold;
   font-size: var(--title-font-size);
@@ -146,7 +147,7 @@ swiper-slide img {
 
 .card {
   border-radius: var(--border-radius);
-  height: 380px;
+  height: 480px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   min-width: 300px;
@@ -158,23 +159,23 @@ swiper-slide img {
 .web-crafts-card {
   border-radius: var(--border-radius);
   margin: 20px;
-  box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.05),inset 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.05), inset 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
   padding: 10px 30px;
   position: relative;
 }
 
-.web-crafts-card img{
+.web-crafts-card img {
   height: 50px;
   width: 50px;
 }
-.web-crafts-card.left-side img
-{
+
+.web-crafts-card.left-side img {
   position: absolute;
   right: -7%;
   top: 32%;
 }
 
-.web-crafts-card.right-side img{
+.web-crafts-card.right-side img {
   position: absolute;
   left: -7%;
   top: 32%;
@@ -240,23 +241,26 @@ footer {
   align-items: center;
 }
 
+.text-center .section-desc{
+  margin: 10px auto;
+}
 .horizontal-line {
   border: none;
-    border-top: 0.1px solid rgba(255, 255, 255, 0.2);
-    width: 80%;
-    margin: 30px auto;
-    opacity: 0.5;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+  margin: 30px auto;
+  opacity: 0.5;
 }
 
 .vertical-line {
   width: 1px;
-  height: 50px;
+  height: 70px;
   background-color: #ccc;
   align-self: center;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
