@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #3D3D6B;
+    --secondary-color: #ffffff;
+    --tertiary-color: #EB434A;
+  
+    --main-font: "Unbounded", serif;
+    --title-font: "Archivo", serif;
+  
+    --main-font-size: 16px;
+    --title-font-size: 50px;
+  
+    --container-width: 1200px;
+    --border-radius: 20px;
+  
+    --gutter-x: 10px
+  }
