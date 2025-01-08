@@ -160,11 +160,14 @@ swiper-slide {
   transition: transform 0.3s ease;
   position: relative;
 }
-
 .card-title {
   font-size: var(--main-font-size);
 }
-
+.web-crafts-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .web-crafts-card {
   border-radius: var(--border-radius);
   margin: 20px;
@@ -172,33 +175,38 @@ swiper-slide {
   padding: 10px 30px;
   position: relative;
 }
-
+.web-crafts-card:hover {
+  transform: scale(1.01);
+}
 .web-crafts-card img {
   height: 50px;
   width: 50px;
 }
-
 .web-crafts-card.left-side img {
   position: absolute;
   right: -7%;
   top: 32%;
 }
-
 .web-crafts-card.right-side img {
   position: absolute;
   left: -7%;
   top: 32%;
 }
+.left-side.center {
+  position: relative;
+  right: 30px;}
 
+.right-side.center {
+  position: relative;
+  left: 30px;
+}
 .card:hover {
   transform: scale(1.01);
 }
-
 .card .btn {
   position: absolute;
   bottom: 12px;
 }
-
 .plan-duration {
   font-size: var(--main-font-size);
   color: #CACACA;
@@ -229,12 +237,6 @@ footer {
   margin: 0;
   font-weight: bold;
   text-align: start;
-}
-
-.webcrafts-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .col-center {
