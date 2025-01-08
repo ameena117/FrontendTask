@@ -187,9 +187,10 @@ swiper-slide {
 }
 .web-crafts-card img {
   height: 30px;
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 50px;
+  padding: 10px;
 }
+
 .web-crafts-card.left-side img {
   position: absolute;
   right: -7%;
