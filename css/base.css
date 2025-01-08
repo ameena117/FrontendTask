@@ -27,7 +27,7 @@
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
   }
   .btn-primary{
     background-color: var(--primary-color);

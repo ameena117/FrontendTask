@@ -24,31 +24,30 @@
 
 <body>
     <header>
-        <section class="hero">
-            <div class="container">
-                <nav class="bg-secondary text-primary main-menu">
-                    <a href="#"><img src="Images/logo 1.png" alt="logo" class="header-logo"></a>
-                    <ul class="list list-menu">
-                        <li><a href="#" class="list-menu-item text-primary">About Us</a></li>
-                        <li><a href="#" class="list-menu-item text-primary">Our Portfolio</a></li>
-                        <li><a href="#" class="list-menu-item text-primary">Team</a></li>
-                        <li><a href="#" class="list-menu-item text-primary">Services</a></li>
-                        <li><a href="#" class="list-menu-item text-primary">Packages</a></li>
-                        <li><a href="#" class="list-menu-item text-primary">Contact Us</a></li>
-                    </ul>
-                    <ul class="list social-media">
-                        <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-facebook"></i></a>
-                        </li>
-                        <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-x-twitter"></i></a>
-                        </li>
-                        <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="text-secondary">
+        <div class="container">
+            <nav class="navbar bg-secondary text-primary">
+                <a href="#"><img src="Images/logo 1.png" alt="logo" class="header-logo"></a>
+                <ul class="list list-menu">
+                    <li><a href="#" class="list-menu-item text-primary">About Us</a></li>
+                    <li><a href="#" class="list-menu-item text-primary">Our Portfolio</a></li>
+                    <li><a href="#" class="list-menu-item text-primary">Team</a></li>
+                    <li><a href="#" class="list-menu-item text-primary">Services</a></li>
+                    <li><a href="#" class="list-menu-item text-primary">Packages</a></li>
+                    <li><a href="#" class="list-menu-item text-primary">Contact Us</a></li>
+                </ul>
+                <ul class="list social-media">
+                    <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li> <a href=""><i class="bg-tertiary text-secondary fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero text-secondary">
                 <div class="container">
                     <div class="row">
                         <div class="col-6">
@@ -62,7 +61,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
     </header>
@@ -110,19 +108,29 @@
 
                     <div class="stats-section">
                         <div class="row">
-                            <div class="col stat">
-                                <h3 class="text-tertiary number">25+</h3>
-                                <p class="label">Innovators Team Members</p>
+                            <div class="col">
+                                <div class=" stat">
+                                    <h3 class="text-tertiary number">25+</h3>
+                                    <p class="label">Innovators Team Members</p>
+                                </div>
                             </div>
-                            <div class="vertical-line"></div>
-                            <div class="col stat">
-                                <h3 class="text-tertiary number">5+</h3>
-                                <p class="label">Happy Clients</p>
+                            <div class="col">
+                                <div class="vertical-line"></div>
                             </div>
-                            <div class="vertical-line"></div>
-                            <div class="col stat">
-                                <h3 class="text-tertiary number">10+</h3>
-                                <p class="label">Years Of Experience</p>
+                            <div class="col">
+                                <div class=" stat">
+                                    <h3 class="text-tertiary number">5+</h3>
+                                    <p class="label">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="vertical-line"></div>
+                            </div>
+                            <div class="col">
+                                <div class=" stat">
+                                    <h3 class="text-tertiary number">10+</h3>
+                                    <p class="label">Years Of Experience</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,22 +199,25 @@
             </div>
         </section>
         <section class="bg-primary text-secondary">
-            <div class="container portfolio">
+            <div class="container">
                 <h5 class="section-short">LET'S BUILD YOUR SUCCESS STORY TOGETHER </h5>
                 <h2 class="section-title">Portfolio</h2>
                 <div class="row">
-                    <div class="col col-9">
+                    <div class="portfolio-header">
+                        <div class="col col-9">
 
-                        <p class="section-desc">We help ambitious businesses like yours generate more profits by
-                            building
-                            awareness, driving web
-                            traffic,
-                            connecting with customers, and growing.</p>
+                            <p class="section-desc">We help ambitious businesses like yours generate more profits by
+                                building
+                                awareness, driving web
+                                traffic,
+                                connecting with customers, and growing.</p>
+                        </div>
+
+                        <div class="col">
+                            <div class="btn-container"> <a href="" class="btn btn-primary">more projects</a></div>
+                        </div>
                     </div>
 
-                    <div class="col col-2">
-                        <div class="btn-container"> <a href="" class="btn btn-primary">more projects</a></div>
-                    </div>
                 </div>
                 <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="2.75"
                     space-between="30" free-mode="true">
@@ -252,7 +263,7 @@
                         <div class="card plan-card bg-secondary text-primary">
                             <h3 class="plan-title">Basic</h3>
                             <h2 class="plan-price">$399 <span class="plan-duration">/ Per month</span></h2>
-                            <ul class="plan-features">
+                            <ul class="list plan-features">
                                 <li class="feature-item">✔ Quality performance</li>
                                 <li class="feature-item">✔ Free custom domain</li>
                                 <li class="feature-item">✔ Best hosting ever</li>
@@ -264,7 +275,7 @@
                         <div class="card plan-card bg-primary text-secondary">
                             <h3 class="plan-title">Advanced</h3>
                             <h2 class="plan-price">$499 <span class="plan-duration">/ Per month</span></h2>
-                            <ul class="plan-features">
+                            <ul class="list plan-features">
                                 <li class="feature-item">✔ Quality performance</li>
                                 <li class="feature-item">✔ Free custom domain</li>
                                 <li class="feature-item">✔ Best hosting ever</li>
@@ -278,7 +289,7 @@
                         <div class="card plan-card bg-primary text-secondary">
                             <h3 class="plan-title">Premium</h3>
                             <h2 class="plan-price">$599 <span class="plan-duration">/ Per month</span></h2>
-                            <ul class="plan-features">
+                            <ul class="list plan-features">
                                 <li class="feature-item">✔ Quality performance</li>
                                 <li class="feature-item">✔ Free custom domain</li>
                                 <li class="feature-item">✔ Best hosting ever</li>
@@ -316,8 +327,8 @@
                                 <img src="Images/Icons/Icon1.png" alt="">
                             </div>
                             <div class="contact-body">
-                                <p>Visit Our Location</p>
-                                <span>5th Street, 21st Floor, New York, USA</span>
+                                <p class="contact-title">Visit Our Location</p>
+                                <span class="contact-data small-text">5th Street, 21st Floor, New York, USA</span>
                             </div>
                         </div>
                     </div>
@@ -327,8 +338,8 @@
                                 <img src="Images/Icons/Icon2.png" alt="">
                             </div>
                             <div class="contact-body">
-                                <p>Send Us Email</p>
-                                <span>yehia.webcraft@gmail.com</span>
+                                <p class="contact-title">Send Us Email</p>
+                                <span class="contact-data small-text">yehia.webcraft@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -338,8 +349,8 @@
                                 <img src="Images/Icons/Icon3.png" alt="">
                             </div>
                             <div class="contact-body">
-                                <p>Call Us Now</p>
-                                <span>0526899004</span>
+                                <p class="contact-title">Call Us Now</p>
+                                <span class="contact-data small-text">0526899004</span>
                             </div>
                         </div>
                     </div>
