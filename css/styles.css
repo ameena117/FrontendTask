@@ -1,9 +1,7 @@
-.navbar{
+.navbar {
   width: var(--container-width);
-  border-radius: 20px;
-  padding: 15px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   z-index: 10;
@@ -15,34 +13,29 @@
   padding: 0;
 }
 
+.list a {
+  text-decoration: none;
+}
+
 .navbar .list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.nav {
-  gap: 15px;
+.main-menu {
+  gap: 25px;
 }
 
-.nav-item {
-  text-decoration: none;
-}
-
-.nav-item:hover {
-  color: var(--tertiary-color);
+.main-menu-item:hover {
+  color: var(--secondary-color);
 }
 
 .social-media {
   gap: 5px;
 }
 
-.social-media i {
-  border-radius: var(--border-radius);
-  padding: 8px;
-}
-
 .header-logo {
-  height: 50px;
+  height: 45px;
 }
 
 .section-short {
@@ -53,9 +46,20 @@
 }
 
 .section-short.sp {
-  background: -webkit-linear-gradient(#199CB6, var(--tertiary-color));
+  background: -webkit-linear-gradient(var(--tertiary-color), var(--secondary-color));
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.section-short::before,
+.section-short::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: currentColor;
+  border-radius: var(--circle-radius);
+  margin: 0px 5px;
 }
 
 .section-title {
@@ -64,7 +68,7 @@
 
 .section-title .sp {
   -webkit-text-fill-color: #ffffff00;
-  -webkit-text-stroke: 1px var(--tertiary-color);
+  -webkit-text-stroke: 1px var(--secondary-color);
 }
 
 .section-desc,
@@ -76,21 +80,12 @@
   max-width: calc(var(--container-width)*0.7);
 }
 
-.small-text,
 .copyright,
-.card-desc {
-  font-size: var(--small-font-size);
+.contact-data,
+.web-crafts-card-desc {
+  font-family: var(--sub-font);
 }
 
-.card-desc{
-  color: #606060;
-}
-.text-blue {
-  color: #199CB6;
-}
-.bg-blue {
-  background-color: #199CB6;
-}
 section {
   padding: 60px 30px;
 }
@@ -98,9 +93,8 @@ section {
 .hero {
   display: flex;
   align-items: center;
-  padding: 150px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(61, 61, 107, 0.9)), url("/MainPage/Images/image\ 2.png");
-  height: 60vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,24 +106,26 @@ section {
   width: 550px;
   position: relative;
 }
-.link-img{
+
+.link-img {
   position: absolute;
   top: 60%;
   left: 40%;
 }
+
 #popup-content {
   width: fit-content;
   margin: auto;
 }
 
 .stats-section {
-  padding: 10px 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
 
 .stat .number {
@@ -146,6 +142,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
 }
 
 swiper-slide {
@@ -153,95 +150,89 @@ swiper-slide {
   flex-direction: column;
 }
 
-.card {
-  border-radius: var(--border-radius);
+.plan-card {
   height: 480px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   min-width: 300px;
-  text-align: left;
   transition: transform 0.3s ease;
   position: relative;
 }
-.card-title {
+
+.web-crafts-card-title {
   font-size: var(--main-font-size);
+  font-family: var(--title-font);
+  font-weight: 900;
 }
-.web-crafts-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+
 .web-crafts-card {
-  border-radius: var(--border-radius);
   margin: 20px;
   box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.05), inset 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 10px 30px;
+  padding: 5px 20px;
   position: relative;
 }
+
 .web-crafts-card:hover {
   transform: scale(1.01);
 }
-.web-crafts-card img {
-  height: 30px;
-  border-radius: 50px;
-  padding: 10px;
+
+.web-crafts-card-img {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  top: 30%;
 }
 
-.web-crafts-card.left-side img {
-  position: absolute;
-  right: -7%;
-  top: 32%;
+.right-side .web-crafts-card-img {
+  left: -8%;
 }
-.web-crafts-card.right-side img {
-  position: absolute;
-  left: -7%;
-  top: 32%;
+
+.left-side .web-crafts-card-img {
+  right: -8%;
 }
+
 .left-side.center {
-  position: relative;
-  right: 30px;}
+  right: 30px;
+}
 
 .right-side.center {
-  position: relative;
   left: 30px;
 }
-.card:hover {
+
+.plan-card:hover {
   transform: scale(1.01);
 }
-.card .btn {
+
+.plan-card .btn {
   position: absolute;
   bottom: 12px;
 }
+
 .plan-duration {
   font-size: var(--main-font-size);
-  color: #CACACA;
 }
 
-.plan-price {
-  font-size: 30px;
+.plan-price,
+.slide-title {
+  font-size: var(--subtitle-font-size);
 }
 
-footer {
-  background-color: #25254D;
-}
-
-.contact-item {
+.contact-card {
   font-size: var(--main-font-size);
   padding: 10px;
-  border-radius: 20px;
   min-width: 300px;
   display: flex;
   gap: 15px;
+  text-align: start;
 }
 
 .contact-icon img {
-  width: 25px;
+  width: 30px;
 }
 
 .contact-title {
   margin: 0;
   font-weight: bold;
-  text-align: start;
 }
 
 .col-center {

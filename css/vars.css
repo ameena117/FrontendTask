@@ -1,17 +1,24 @@
 :root {
-    --primary-color: #3D3D6B;
-    --secondary-color: #ffffff;
-    --tertiary-color: #EB434A;
-  
-    --main-font: "Unbounded", serif;
-    --title-font: "Archivo", serif;
-  
-    --main-font-size: 16px;
-    --title-font-size: 50px;
-    --small-font-size: 12px;
-  
-    --container-width: 1200px;
-    --border-radius: 20px;
-  
-    --gutter-x: 10px
-  }
+  --primary-color: #3D3D6B;
+  --dark-primary-color: #25254D;
+  --secondary-color: #EB434A;
+  --light-color: #ffffff;
+  --dark-color: #606060;
+  --muted-color: #CACACA;
+  --tertiary-color: #199CB6;
+
+  --main-font: "Unbounded", serif;
+  --title-font: "Archivo", serif;
+  --sub-font: "Inter", serif;
+
+  --main-font-size: 17px;
+  --title-font-size: 50px;
+  --subtitle-font-size: 28px;
+  --small-font-size: 14px;
+
+  --container-width: 1200px;
+  --rounded-radius: 20px;
+  --circle-radius: 50px;
+
+  --gutter-x: 10px
+}

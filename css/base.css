@@ -14,6 +14,14 @@ body {
   background-color: var(--secondary-color);
 }
 
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-primary-color);
+}
+
 .bg-tertiary {
   background-color: var(--tertiary-color);
 }
@@ -26,34 +34,60 @@ body {
   color: var(--secondary-color);
 }
 
+.text-light {
+  color: var(--light-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
 .text-tertiary {
   color: var(--tertiary-color);
+}
+
+.text-muted {
+  color: var(--muted-color);
 }
 
 .text-center {
   text-align: center;
 }
 
+.small-text {
+  font-size: var(--small-font-size);
+}
+
 .btn {
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: var(--rounded-radius);
   margin: 20px 0;
+  font-size: var(--small-font-size);
 }
 
-.btn-primary {
+.rounded {
+  border-radius: var(--rounded-radius);
+}
+
+.circle {
+  border-radius: var(--circle-radius);
+  padding: 10px;
+}
+
+.btn-outline-primary {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: var(--secondary-color) solid 0.5px;
+  color: var(--light-color);
+  border: var(--light-color) solid 0.5px;
 }
 
-.btn-secondary {
-  background-color: var(--secondary-color);
+.btn-outline-light {
+  background-color: var(--light-color);
   color: var(--primary-color);
   border: var(--primary-color) solid 0.5px;
 }
 
-.btn-tertiary {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
 }
