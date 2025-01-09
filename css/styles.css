@@ -172,7 +172,9 @@ swiper-slide {
   position: relative;
 }
 
-.web-crafts-card:hover {
+.web-crafts-card:hover,
+.plan-card:hover,
+.contact-card:hover {
   transform: scale(1.01);
 }
 
@@ -196,10 +198,6 @@ swiper-slide {
 
 .right-side.center {
   left: 30px;
-}
-
-.plan-card:hover {
-  transform: scale(1.01);
 }
 
 .plan-card .btn {
