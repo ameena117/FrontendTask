@@ -182,14 +182,6 @@ swiper-slide {
   position: absolute;
   top: 30%;
 }
-.right-side.web-crafts-card {
-  text-align: right;
-}
-
-.left-side.web-crafts-card {
-  text-align: left;
-}
-
 .right-side .web-crafts-card-img {
   left: -8%;
 }

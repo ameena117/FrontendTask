@@ -53,6 +53,14 @@ body {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 
 .small-text {
   font-size: var(--small-font-size);
