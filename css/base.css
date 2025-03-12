@@ -99,3 +99,21 @@ body {
   background-color: var(--secondary-color);
   color: var(--light-color);
 }
+
+/* hover */
+.btn-outline-primary:hover {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  border: var(--primary-color) solid 0.5px;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: var(--light-color) solid 0.5px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+}
