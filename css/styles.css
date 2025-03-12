@@ -254,3 +254,8 @@ swiper-slide {
   background-color: #ccc;
   margin-top: 50px;
 }
+
+.fa-brands:hover{
+  color: var(--primary-color);
+  background-color: var(--light-color);
+}
