@@ -5,7 +5,10 @@ body {
   box-sizing: border-box;
   line-height: 1.5;
 }
-
+img{
+  display: block;
+  max-width: 100%;
+}
 .bg-primary {
   background-color: var(--primary-color);
 }

@@ -2,10 +2,12 @@
   width: var(--container-width);
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   position: absolute;
   z-index: 10;
   margin: 30px auto;
+  max-width: 100%;
 }
 
 .list {
@@ -99,11 +101,12 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  width: 100%;
 }
 
 .shopify-img {
-  height: 550px;
-  width: 550px;
+  aspect-ratio: 0.78/1;
+  object-fit: contain;
   position: relative;
 }
 
